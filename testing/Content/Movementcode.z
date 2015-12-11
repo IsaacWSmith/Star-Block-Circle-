@@ -1,0 +1,46 @@
+class Movementcode : ZilchComponent
+{
+    [Property]
+    var Speed : Real = 0.5;
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        if(Zero.Keyboard.KeyIsDown(Keys.W))
+        {
+            var temp = this.Owner.Transform.Translation;
+            temp.Y +=0.2; this.Speed;
+            this.Owner.Transform.Translation = temp;
+
+
+        }
+        if(Zero.Keyboard.KeyIsDown(Keys.S))
+        {
+            var temp1 = this.Owner.Transform.Translation;
+            temp1.Y -=0.2; this.Speed;
+            this.Owner.Transform.Translation = temp1;
+
+
+        }
+        if(Zero.Keyboard.KeyIsDown(Keys.D))
+        {
+            var temp2 = this.Owner.Transform.Translation;
+            temp2.X +=0.2; this.Speed;
+            this.Owner.Transform.Translation = temp2;
+
+
+        }
+        if(Zero.Keyboard.KeyIsDown(Keys.A))
+        {
+            var temp3 = this.Owner.Transform.Translation;
+            temp3.X -=0.2; this.Speed;
+            this.Owner.Transform.Translation = temp3;
+
+            
+        }
+    
+    }
+}

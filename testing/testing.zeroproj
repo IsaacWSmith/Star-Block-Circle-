@@ -6,7 +6,7 @@ Cog =
 		string ProjectOwner = "",
 		string DefaultLevel = "Level",
 		string ProjectSpace = "Space",
-		string ProjectFolder = "\\student\student$\17.Elijah.Stidham\My Documents\ZeroProjects\testing",
+		string ProjectFolder = "C:\Users\17.elijah.stidham\Desktop\GitHub\Star-Block-Circle-\testing",
 		uint ProjectEngineRevision = 12624,
 		bool AutoTakeProjectScreenshot = true,
 	},
