@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "Plane0",
+		uint64 ResourceId = 567e0ef18a0534a3,
+	},
+},
